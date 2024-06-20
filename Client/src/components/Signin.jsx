@@ -6,7 +6,7 @@ const Signin = () => {
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  let url = "http://localhost:4000/signin";
+  let url = "http://combined-one.vercel.app/signin";
   // let token = "12345";
 const loginHere = ()=>{
   axios

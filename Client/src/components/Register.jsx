@@ -9,7 +9,7 @@ const Register = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [number, setNumber] = useState("");
-  let url = "http://localhost:4000/register";
+  let url = "http://combined-one.vercel.app/register";
   
   const getData = () => {
     console.log(firstName, lastName, email, password, number);

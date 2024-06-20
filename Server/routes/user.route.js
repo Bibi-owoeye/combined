@@ -13,5 +13,4 @@ router.post("/signin", postSignin)
 router.get("/", ListofStudents)
 router.get('/sendMail', sendMail)
 
-
 module.exports = router
