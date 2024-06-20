@@ -10,7 +10,7 @@ router.post("/register", postRegister)
 router.get("/register", getRegister)
 router.get("/signin", getSignin)
 router.post("/signin", postSignin)
-router.get("/listofstudent", ListofStudents)
+router.get("/", ListofStudents)
 router.get('/sendMail', sendMail)
 
 
