@@ -8,7 +8,7 @@ const Dashboard = () => {
   const [data, setData] = useState([])
   const [isLoading, setIsLoading] = useState(false)
   function getData(){
-    axios.get('http://localhost:4000/dashboard')
+    axios.get('https://combined-6p47.onrender.com/dashboard')
     .then((res)=>{
       setData(res.data.data)
       setIsLoading(true)
@@ -19,7 +19,7 @@ const Dashboard = () => {
   //  console.log(token);
   useEffect(() => {
    getData()
-  axios.get('http://localhost:4000/verifyUser', {
+  axios.get('https://combined-6p47.onrender.com/verifyUser', {
     headers: {
       Authorization: `Bearers ${token}`,
      "Content-Type": "Aplication/json" ,

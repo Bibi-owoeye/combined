@@ -12,6 +12,8 @@ import Not_found from "./components/Not_found";
 import User from "./components/User";
 import ShowApi from "./components/ShowApi";
 import Mui from "./components/Mui";
+import Formik from "./components/Formik";
+import CounterS from "./components/CounterS";
 
 const App = () => {
 // let  token = "12345";
@@ -25,6 +27,8 @@ const App = () => {
         {/* <Route path="/" element={<Home/>}/> */}
         <Route path="/register" element={<Register/>}/>
         <Route path="/signin" element={<Signin/>}/>
+        <Route path="/formik" element={<Formik/>}/>
+        <Route path="/counter" element={<CounterS/>}/>
         <Route path="/products" element={<Products/>}>
         <Route path="/products/:product" element={<Listofproducts/>}/>
         </Route>

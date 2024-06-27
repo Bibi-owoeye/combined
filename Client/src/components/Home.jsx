@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import Logo from "../assets/react.svg"
 import axios from 'axios'
-
+import { useDispatch, useSelector } from 'react-redux'
+import { increment,decrement } from '../Counter/CounterSlice'
 
 const Home = () => {
+  const count = useSelector((state)=>state.counter.value)
+    const dispatch = useDispatch()
   useEffect(() => {
    getData()
   },[] )
@@ -24,6 +27,9 @@ const Home = () => {
   }
   return (
     <div>
+       <button onClick={()=>dispatch(decrement())}>Decrement</button>
+        <p>{count}</p>
+        <button onClick={()=>dispatch(increment())}>Increment</button>
       <button onClick={getData} className='d-none'>get data</button>
       <div className='row d-flex m-5 gap-1 shadow p-5'>
       {

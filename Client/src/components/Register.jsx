@@ -9,9 +9,10 @@ const Register = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [number, setNumber] = useState("");
-  let url = "http://combined-one.vercel.app/register";
+  let url = "https://combined-6p47.onrender.com/register";
   
   const getData = () => {
+    
     console.log(firstName, lastName, email, password, number);
     axios
       .post(url, { firstName, lastName, email, password, number })

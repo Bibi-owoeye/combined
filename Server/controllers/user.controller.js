@@ -142,8 +142,7 @@ const postSignin = async (req, res) => {
         console.log(("user not found,please sign up!!"));
     }
 
-    const correctPassword = bcrypt.compareSync(password, user.password)
-
+    const correctPassword = await bcrypt.compareSync(password, user.password)
     if (!correctPassword){
         res.status(401).json({
             Message:"Wrong login details"
